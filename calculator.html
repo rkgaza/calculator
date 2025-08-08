@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple, user-friendly online calculator for quick and easy math calculations.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" href="mylogo.png">
+    <title>Online Calculator</title>
+</head>
+<body>
+    <!-- Calculator Container-->
+    <div class="calculator" id="calcu">
+        <!-- Display Container-->
+        <div class="display">
+            <div class="input-display">
+                <p id="input"></p>
+            </div>
+        </div>
+        <!-- This is the container for the buttons -->
+        <div class="number-btns">
+            <!-- buttons are separated by columns -->
+            <div class="first-column">
+                <button onclick="clearAll()" class="bg-green">C</button>
+                <button onclick="press('7')" >7</button>
+                <button onclick="press('4')" >4</button>
+                <button onclick="press('1')" >1</button>
+                <button onclick="toDecimal()" >%</button>
+            </div>
+            <div class="second-column">
+                <button onclick="press('÷')" class="bg-green" style="font-size: 20px;">÷</button>
+                <button onclick="press('8')" >8</button>
+                <button onclick="press('5')" >5</button>
+                <button onclick="press('2')" >2</button>
+                <button onclick="press('0')" >0</button>
+            </div>
+            <div class="third-column">
+                <button onclick="press('x')" class="bg-green">x</button>
+                <button onclick="press('9')" >9</button>
+                <button onclick="press('6')" >6</button>
+                <button onclick="press('3')" >3</button>
+                <button onclick="press('.')"  style="font-size: 20px;">.</button>
+            </div>
+            <div class="fourth-column">
+                <button onclick="deleteChar()" class="bg-green">CE</button>
+                <button onclick="press('-')" style="font-size: 20px;">-</button>
+                <button onclick="press('+')" >+</button>
+                <button onclick="calculate()" class="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

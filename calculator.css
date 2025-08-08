@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+    background-color: #DCDCDC;
+}
+.calculator{
+    width: 20%;
+    height: 400px;
+    border-radius: 20px;
+    padding: 25px 0px 0px 0px;
+    background-color: #111727;
+}
+.display{
+    width: 85%;
+    height: 15%;
+    display: flexbox;
+    justify-items: center;
+    border-radius: 10px;
+    margin-inline: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #DCDCDC;
+    font-family: "Fredoka", sans-serif;
+}
+.input-display{
+    width: 95%;
+    height: 40%;
+    margin: 0;
+    font-size: 20px;
+    color: #111727;
+    padding: 0px 5% 0px 0px;
+    white-space: nowrap;
+    overflow: scroll;
+    direction: ltr;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+.input-display::-webkit-scrollbar{
+    display: none; 
+}
+.input-display p{
+    margin: 0;
+}
+.number-btns{
+    width: 85%;
+    height: 70%;
+    display: flex;
+    margin-inline: auto;
+    margin-top: 50px;
+    gap: 7%;
+}
+.first-column, .second-column, .third-column, .fourth-column{
+    width: 20%;
+    height: 100%;
+}
+.equal{
+    height: 33%;
+    background-color: #9FE614;
+}
+.bg-green{
+    background-color: #9FE614;
+}
+#input::after{
+    content: '|';
+    color: #111727;
+    animation: blink 1s infinite;
+}
+button{
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    border: none;
+    margin-inline: auto;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    font-family: "Fredoka", sans-serif;
+    color: #0e0e0e;
+    font-size: 15px;
+}
+button:active{
+    transform: scale(.9);
+}
+button:hover{
+    background-color: #9FE614;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@media (min-width:60px) and (max-width:315px) {
+    .calculator{
+        width: 90%;
+    }
+}
+@media (min-width:315px) and (max-width:480px) {
+.calculator{
+    width: 80%;
+}
+
+}
+@media (min-width:481px) and (max-width:1200px) {
+.calculator{
+    width: 70%;
+}
+}
+@media (min-width:1201px) and (max-width:1600px) {
+.calculator{
+    width: 20%;
+}
+}
+@media (min-width:1601px) and (max-width:2000px) {
+.calculator{
+    width: 30%;
+}
+}
