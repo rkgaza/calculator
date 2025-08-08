@@ -1,5 +1,5 @@
-var  display = document.getElementById("input");
-var toDisplay = "";
+let  display = document.getElementById("input");
+let toDisplay = "";
 
 // function is for display
 // it takes the parameter then concatinates them using the toDisplay variable
@@ -13,7 +13,7 @@ const press = (num) => {
 // function for converting the number into decimal
 const toDecimal = () => {
 
-    var decimal;
+    let decimal;
 
     if(toDisplay !== "") {
         decimal = toDisplay / 100;
@@ -55,7 +55,7 @@ const calculate = () => {
     // after the for loop the value of fixed variable will be 10*10/10
     // then the value of the fixed variable will be assigned to toDisplay varibale gain.
 
-    var fixed = "";
+    let fixed = "";
 
     for(let i=0; i<toDisplay.length; i++){
         
@@ -71,7 +71,7 @@ const calculate = () => {
     }
 
     try {
-        var total = eval(fixed);
+        const total = eval(fixed);
 
         toDisplay = total.toString();
         display.innerText = toDisplay;
@@ -85,4 +85,5 @@ const calculate = () => {
     }
 
 };
+
 
