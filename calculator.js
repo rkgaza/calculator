@@ -1,7 +1,7 @@
 let  display = document.getElementById("input");
 let toDisplay = "";
 
-// function is for display
+// function for display
 // it takes the parameter then concatinates them using the toDisplay variable
 const press = (num) => {
 
@@ -85,5 +85,6 @@ const calculate = () => {
     }
 
 };
+
 
 
